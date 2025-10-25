@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@gear-js/api": "^0.38.1",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2"
   },
   "devDependencies": {

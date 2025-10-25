@@ -4,6 +4,8 @@
  * Demonstrates the full lifecycle from project creation to final payment
  */
 
+require('dotenv').config();
+
 const { HyperVaraStreamsAPI } = require('./hyper_vara_streams_api');
 const fs = require('fs');
 const path = require('path');
@@ -38,9 +40,14 @@ async function main() {
   await api.connect('wss://testnet.vara.network', addresses);
 
   // Create keyrings (in production, load from secure storage)
-  const projectOwner = api.createKeyring('//Alice');
-  const developer = api.createKeyring('//Bob');
-  const relayer = api.createKeyring('//Charlie');
+  // Option 1: Use environment variable (recommended)
+  const ownerSeed = process.env.VARA_MNEMONIC || '//Alice';
+  const projectOwner = await api.createKeyring(ownerSeed);
+  
+  // For demo purposes, use test accounts for developer and relayer
+  // In production, these would be different real accounts
+  const developer = await api.createKeyring('//Bob');
+  const relayer = await api.createKeyring('//Charlie');
 
   console.log('\n👥 Participants:');
   console.log(`   Project Owner: ${projectOwner.address}`);

@@ -4,6 +4,8 @@
  * Provides HTTP endpoints for all contract interactions
  */
 
+require('dotenv').config();
+
 const express = require('express');
 const { HyperVaraStreamsAPI } = require('./hyper_vara_streams_api');
 const fs = require('fs');

@@ -28,6 +28,13 @@ function hexToBytes(hex) {
 function addressToBytes(address) {
   // Convert Vara address to 32-byte array
   const decoded = decodeAddress(address);
+  
+  // decodeAddress returns a hex string, convert it to bytes
+  if (typeof decoded === 'string') {
+    return hexToBytes(decoded);
+  }
+  
+  // If it's already bytes, use it directly
   return new Uint8Array(decoded);
 }
 
@@ -108,10 +115,12 @@ class HyperVaraStreamsAPI {
   }
 
   /**
-   * Create a keyring from seed/mnemonic
+   * Create a keyring from seed/mnemonic or URI (async)
+   * @param {string} seedOrUri - Seed phrase, hex seed, or URI (//Alice, //Bob, etc.)
    */
-  createKeyring(seed) {
-    return GearKeyring.fromSeed(seed);
+  async createKeyring(seedOrUri) {
+    // GearKeyring methods return promises, must await
+    return await GearKeyring.fromSuri(seedOrUri);
   }
 
   /**
@@ -125,18 +134,14 @@ class HyperVaraStreamsAPI {
    * Send a message to a contract
    */
   async sendMessage(destination, payload, keyring, value = 0) {
-    const gas = await this.api.program.calculateGas.handle(
-      decodeAddress(keyring.address),
-      destination,
-      payload,
-      value,
-      false
-    );
+    // Use fixed gas limit to avoid calculation issues
+    // This is a reasonable default for most operations
+    const gasLimit = 250000000000; // 250 billion units
 
     const tx = this.api.message.send({
       destination,
       payload,
-      gasLimit: gas.min_limit,
+      gasLimit,
       value
     });
 
