@@ -1,0 +1,37 @@
+{
+  "name": "hyper-vara-streams",
+  "version": "1.0.0",
+  "description": "Hyper Vara Streams - Escrow payment system with Hyperliquid verification on Vara Network",
+  "main": "hyper_vara_streams_api.js",
+  "scripts": {
+    "test": "node test_api.js",
+    "test:token": "node test_api.js token",
+    "test:escrow": "node test_api.js escrow",
+    "test:health": "node test_api.js health",
+    "deploy": "node deploy_hyper_vara_streams.js",
+    "server": "node hyper_vara_streams_server.js",
+    "workflow": "node complete_workflow.js",
+    "dev": "nodemon hyper_vara_streams_server.js"
+  },
+  "keywords": [
+    "vara",
+    "smart-contract",
+    "blockchain",
+    "escrow",
+    "hyperliquid",
+    "defi",
+    "payment-streams"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@gear-js/api": "^0.38.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
