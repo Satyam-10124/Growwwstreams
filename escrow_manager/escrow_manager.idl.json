@@ -1,0 +1,69 @@
+{
+  "version": "0.1.0",
+  "name": "escrow_manager",
+  "programId": null,
+  "instructions": [],
+  "state": [
+    {
+      "name": "BUDGET",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "IS_ACTIVE",
+      "type": "bool",
+      "mutable": true
+    },
+    {
+      "name": "IS_FUNDED",
+      "type": "bool",
+      "mutable": true
+    },
+    {
+      "name": "DEVELOPER_SELECTED",
+      "type": "bool",
+      "mutable": true
+    },
+    {
+      "name": "PROGRESS_POOL",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "FINAL_POOL",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "RELEASED_PROGRESS",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "RELEASED_FINAL",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "MILESTONE_1_PERCENT",
+      "type": "u16",
+      "mutable": true
+    },
+    {
+      "name": "MILESTONE_2_PERCENT",
+      "type": "u16",
+      "mutable": true
+    },
+    {
+      "name": "MILESTONE_3_PERCENT",
+      "type": "u16",
+      "mutable": true
+    }
+  ],
+  "types": [],
+  "metadata": {
+    "wasmHash": "b40988a0438d4a85da0b22e1449034be8d30032daef2ec280ba989a2e83be417",
+    "compiler": "rustc + gear-wasm-builder",
+    "source": "AI-generated via Gemini 2.5 Pro"
+  }
+}

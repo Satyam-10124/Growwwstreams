@@ -1,0 +1,23 @@
+{
+  "contract_key": "usdc_token",
+  "name": "USDC Token",
+  "description": "Fungible stablecoin (ERC-20/PSP22-style) for payments",
+  "status": "success",
+  "timestamp": "2025-10-25T19:27:45.704173",
+  "files": {
+    "source": "hyper_vara_streams_deployment/usdc_token/usdc_token.rs",
+    "wasm": "/tmp/evi-vara-storage/artifacts/usdc_token/usdc_token.wasm",
+    "metadata": "/tmp/evi-vara-storage/artifacts/usdc_token/usdc_token.meta.wasm",
+    "idl": "/tmp/evi-vara-storage/artifacts/usdc_token/usdc_token.idl.json",
+    "meta_json": "/tmp/evi-vara-storage/artifacts/usdc_token/usdc_token.meta.json"
+  },
+  "deployment": {
+    "program_id": "0x4d0e258ccc3962cddae2c1d3fc45dbd398cdba55cf19e82c103b9ee6424f6ebe",
+    "network": "wss://testnet.vara.network",
+    "block_hash": "0xb3b61c40e9c6a686a83e4bb540cda7704357d9843524c7caa48d224b3c43400e",
+    "block_number": null,
+    "deployer": "5GsXKGe5Ayw4u3obnUDXuQ6kg4atXuGAVGj6FfjMVb7smuAp",
+    "explorer_url": "https://idea.gear-tech.io/programs/0x4d0e258ccc3962cddae2c1d3fc45dbd398cdba55cf19e82c103b9ee6424f6ebe?node=wss%3A%2F%2Ftestnet.vara.network",
+    "metadata_uploaded": true
+  }
+}

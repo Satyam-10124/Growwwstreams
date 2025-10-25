@@ -1,0 +1,49 @@
+{
+  "name": "verification_bridge",
+  "programId": null,
+  "description": "Initializes the verification bridge contract. /// This function is called once upon contract creation. It sets the contract admin to the message source and initializes",
+  "functions": [
+    {
+      "name": "init",
+      "visibility": "private",
+      "parameters": "",
+      "returns": "void"
+    },
+    {
+      "name": "handle",
+      "visibility": "private",
+      "parameters": "",
+      "returns": "void"
+    }
+  ],
+  "state_variables": [
+    {
+      "name": "MILESTONE_1_LAST_PERCENT",
+      "type": "u16",
+      "mutable": true
+    },
+    {
+      "name": "MILESTONE_2_LAST_PERCENT",
+      "type": "u16",
+      "mutable": true
+    },
+    {
+      "name": "MILESTONE_3_LAST_PERCENT",
+      "type": "u16",
+      "mutable": true
+    },
+    {
+      "name": "POLICY_MIN_STEP_BPS",
+      "type": "u16",
+      "mutable": true
+    },
+    {
+      "name": "POLICY_TEST_REQUIRED",
+      "type": "bool",
+      "mutable": true
+    }
+  ],
+  "generated_at": "2025-10-25T19:41:02.408438",
+  "idl_file": "verification_bridge.idl.json",
+  "wasm_file": "verification_bridge.wasm"
+}

@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "name": "verification_bridge",
+  "programId": null,
+  "instructions": [],
+  "state": [
+    {
+      "name": "MILESTONE_1_LAST_PERCENT",
+      "type": "u16",
+      "mutable": true
+    },
+    {
+      "name": "MILESTONE_2_LAST_PERCENT",
+      "type": "u16",
+      "mutable": true
+    },
+    {
+      "name": "MILESTONE_3_LAST_PERCENT",
+      "type": "u16",
+      "mutable": true
+    },
+    {
+      "name": "POLICY_MIN_STEP_BPS",
+      "type": "u16",
+      "mutable": true
+    },
+    {
+      "name": "POLICY_TEST_REQUIRED",
+      "type": "bool",
+      "mutable": true
+    }
+  ],
+  "types": [],
+  "metadata": {
+    "wasmHash": "d495611a76ae89bd04ba70ccc132a71eb580fcaf4ee6fc16f0e70ac64f37d8d2",
+    "compiler": "rustc + gear-wasm-builder",
+    "source": "AI-generated via Gemini 2.5 Pro"
+  }
+}

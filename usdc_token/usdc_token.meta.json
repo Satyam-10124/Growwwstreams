@@ -1,0 +1,78 @@
+{
+  "name": "usdc_token",
+  "programId": null,
+  "description": "AI-generated smart contract",
+  "functions": [
+    {
+      "name": "find_account_slot",
+      "visibility": "private",
+      "parameters": "account_id: &[u8; 32]",
+      "returns": "u8"
+    },
+    {
+      "name": "find_or_create_account_slot",
+      "visibility": "private",
+      "parameters": "account_id: &[u8; 32]",
+      "returns": "u8"
+    },
+    {
+      "name": "get_balance_mut_by_slot",
+      "visibility": "private",
+      "parameters": "slot: u8",
+      "returns": "&'static mut u128"
+    },
+    {
+      "name": "get_balance_by_slot",
+      "visibility": "private",
+      "parameters": "slot: u8",
+      "returns": "u128"
+    },
+    {
+      "name": "init",
+      "visibility": "private",
+      "parameters": "",
+      "returns": "void"
+    },
+    {
+      "name": "handle",
+      "visibility": "private",
+      "parameters": "",
+      "returns": "void"
+    }
+  ],
+  "state_variables": [
+    {
+      "name": "TOTAL_SUPPLY",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "BALANCE_1",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "BALANCE_2",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "BALANCE_3",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "BALANCE_4",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "BALANCE_5",
+      "type": "u128",
+      "mutable": true
+    }
+  ],
+  "generated_at": "2025-10-25T19:31:34.984299",
+  "idl_file": "usdc_token.idl.json",
+  "wasm_file": "usdc_token.wasm"
+}

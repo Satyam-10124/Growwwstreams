@@ -1,0 +1,79 @@
+{
+  "name": "escrow_manager",
+  "programId": null,
+  "description": "AI-generated smart contract",
+  "functions": [
+    {
+      "name": "init",
+      "visibility": "private",
+      "parameters": "",
+      "returns": "void"
+    },
+    {
+      "name": "handle",
+      "visibility": "private",
+      "parameters": "",
+      "returns": "void"
+    }
+  ],
+  "state_variables": [
+    {
+      "name": "BUDGET",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "IS_ACTIVE",
+      "type": "bool",
+      "mutable": true
+    },
+    {
+      "name": "IS_FUNDED",
+      "type": "bool",
+      "mutable": true
+    },
+    {
+      "name": "DEVELOPER_SELECTED",
+      "type": "bool",
+      "mutable": true
+    },
+    {
+      "name": "PROGRESS_POOL",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "FINAL_POOL",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "RELEASED_PROGRESS",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "RELEASED_FINAL",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "MILESTONE_1_PERCENT",
+      "type": "u16",
+      "mutable": true
+    },
+    {
+      "name": "MILESTONE_2_PERCENT",
+      "type": "u16",
+      "mutable": true
+    },
+    {
+      "name": "MILESTONE_3_PERCENT",
+      "type": "u16",
+      "mutable": true
+    }
+  ],
+  "generated_at": "2025-10-25T19:38:41.027444",
+  "idl_file": "escrow_manager.idl.json",
+  "wasm_file": "escrow_manager.wasm"
+}

@@ -1,0 +1,23 @@
+{
+  "contract_key": "verification_bridge",
+  "name": "Verification Bridge",
+  "description": "Validates AI attestations, enforces policy, forwards to Escrow",
+  "status": "success",
+  "timestamp": "2025-10-25T19:38:59.351374",
+  "files": {
+    "source": "hyper_vara_streams_deployment/verification_bridge/verification_bridge.rs",
+    "wasm": "/tmp/evi-vara-storage/artifacts/verification_bridge/verification_bridge.wasm",
+    "metadata": "/tmp/evi-vara-storage/artifacts/verification_bridge/verification_bridge.meta.wasm",
+    "idl": "/tmp/evi-vara-storage/artifacts/verification_bridge/verification_bridge.idl.json",
+    "meta_json": "/tmp/evi-vara-storage/artifacts/verification_bridge/verification_bridge.meta.json"
+  },
+  "deployment": {
+    "program_id": "0x073865f712b3760e2a5ffbdfc91c44bf9ade6227230dd3239faa6accead5442a",
+    "network": "wss://testnet.vara.network",
+    "block_hash": "0xfe1cb8f1103a3fa780ace58f8b3fe3fd3d1b7b79ea996ee69e745ccb200bfbd8",
+    "block_number": null,
+    "deployer": "5GsXKGe5Ayw4u3obnUDXuQ6kg4atXuGAVGj6FfjMVb7smuAp",
+    "explorer_url": "https://idea.gear-tech.io/programs/0x073865f712b3760e2a5ffbdfc91c44bf9ade6227230dd3239faa6accead5442a?node=wss%3A%2F%2Ftestnet.vara.network",
+    "metadata_uploaded": true
+  }
+}

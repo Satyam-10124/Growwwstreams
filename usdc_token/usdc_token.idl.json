@@ -1,0 +1,61 @@
+{
+  "version": "0.1.0",
+  "name": "usdc_token",
+  "programId": null,
+  "instructions": [],
+  "state": [
+    {
+      "name": "TOTAL_SUPPLY",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "BALANCE_1",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "BALANCE_2",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "BALANCE_3",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "BALANCE_4",
+      "type": "u128",
+      "mutable": true
+    },
+    {
+      "name": "BALANCE_5",
+      "type": "u128",
+      "mutable": true
+    }
+  ],
+  "types": [
+    {
+      "name": "find_account_slot",
+      "kind": "function"
+    },
+    {
+      "name": "find_or_create_account_slot",
+      "kind": "function"
+    },
+    {
+      "name": "get_balance_mut_by_slot",
+      "kind": "function"
+    },
+    {
+      "name": "get_balance_by_slot",
+      "kind": "function"
+    }
+  ],
+  "metadata": {
+    "wasmHash": "cba9a9a5030fbab05d52b86d1e7e1dc9ac4662edbab6568a7eec5b41047a0d77",
+    "compiler": "rustc + gear-wasm-builder",
+    "source": "AI-generated via Gemini 2.5 Pro"
+  }
+}

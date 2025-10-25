@@ -1,0 +1,23 @@
+{
+  "contract_key": "escrow_manager",
+  "name": "Escrow Manager",
+  "description": "Manages projects, milestones, USDC vault, and payouts with 60/35 split",
+  "status": "success",
+  "timestamp": "2025-10-25T19:31:53.732707",
+  "files": {
+    "source": "hyper_vara_streams_deployment/escrow_manager/escrow_manager.rs",
+    "wasm": "/tmp/evi-vara-storage/artifacts/escrow_manager/escrow_manager.wasm",
+    "metadata": "/tmp/evi-vara-storage/artifacts/escrow_manager/escrow_manager.meta.wasm",
+    "idl": "/tmp/evi-vara-storage/artifacts/escrow_manager/escrow_manager.idl.json",
+    "meta_json": "/tmp/evi-vara-storage/artifacts/escrow_manager/escrow_manager.meta.json"
+  },
+  "deployment": {
+    "program_id": "0x62dcf755afbf95e27f163c0687dd24d9950a2b7dfdefedf63a03d17111399fb1",
+    "network": "wss://testnet.vara.network",
+    "block_hash": "0xe2922bd501a68f30e2a08d2a721dcf4b82fa7b0cb4376f878832d49efdafb450",
+    "block_number": null,
+    "deployer": "5GsXKGe5Ayw4u3obnUDXuQ6kg4atXuGAVGj6FfjMVb7smuAp",
+    "explorer_url": "https://idea.gear-tech.io/programs/0x62dcf755afbf95e27f163c0687dd24d9950a2b7dfdefedf63a03d17111399fb1?node=wss%3A%2F%2Ftestnet.vara.network",
+    "metadata_uploaded": true
+  }
+}
